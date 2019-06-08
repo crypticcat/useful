@@ -10,3 +10,20 @@ public class Main {
 
    }
 }
+***
+Write a program that accepts, as input, a sequence of non-negative integers, each written on a separate line. When the program encounters 0, it should stop and output the total length of the sequence so far (not including the final 0).
+
+Do not read any numbers following 0:
+import java.util.Scanner;
+
+public class Stepik {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+            int n = 0;
+            while (sc.nextInt() != 0) {
+                n++;
+            }
+            System.out.println(n);
+        }
+    }
+
